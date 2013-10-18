@@ -13,4 +13,11 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
-//= require_tree .
+//= require handlebars
+//= require ember
+//= require ember-data
+//= require_self
+//= require rc_iva
+
+// for more details see: http://emberjs.com/guides/application/
+RcIva = Ember.Application.create();
