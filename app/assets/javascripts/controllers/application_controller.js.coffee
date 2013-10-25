@@ -1,6 +1,10 @@
-RcIva.PeopleController = Ember.ArrayController.extend
+RcIva.ApplicationController = Ember.ArrayController.extend
   actions:
-    doStuff: ->
-      @.toggleProperty 'isShowing'
+    showName: ->
+      name = @get('name')
+      if !name.trim()
+        return
 
-  isShowing: true
+      @set('name', '')
+
+      alert name
