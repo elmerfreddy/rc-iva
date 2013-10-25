@@ -49,3 +49,7 @@ gem 'debugger', group: [:development, :test]
 gem 'haml-rails'
 
 gem 'ember-rails'
+gem 'ember-source', '1.1.2'
+gem 'emblem-rails'
+
+gem 'active_model_serializers'

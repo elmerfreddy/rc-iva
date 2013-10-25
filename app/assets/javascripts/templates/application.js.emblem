@@ -1,0 +1,8 @@
+div
+  label Name:
+  = input type="text" value=name placeholder="Enter your name"
+
+.text
+  h1 My name is #{name}!
+
+= outlet

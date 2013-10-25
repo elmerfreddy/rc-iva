@@ -1,0 +1,12 @@
+| hola mundo
+div
+  | loco
+
+button click=doStuff Hello people!
+
+if isShowing
+  p I am here!
+else
+  p I am NOT here
+
+p class=isShowing:here:not-here Hey!

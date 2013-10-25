@@ -33,6 +33,9 @@ GEM
       ember-source
       execjs
       handlebars-source
+    barber-emblem (0.1.1)
+      barber (>= 0.4.1)
+      emblem-source
     builder (3.1.4)
     coffee-rails (4.0.1)
       coffee-script (>= 2.2.0)
@@ -58,8 +61,12 @@ GEM
       execjs (>= 1.2)
       handlebars-source
       railties (>= 3.1)
-    ember-source (1.0.0)
+    ember-source (1.1.2)
       handlebars-source (= 1.0.12)
+    emblem-rails (0.1.1)
+      barber-emblem (~> 0.1.1)
+      ember-rails (>= 0.11.1)
+    emblem-source (0.3.2)
     erubis (2.7.0)
     execjs (2.0.2)
     haml (4.0.3)
@@ -138,9 +145,12 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  active_model_serializers
   coffee-rails (~> 4.0.0)
   debugger
   ember-rails
+  ember-source (= 1.1.2)
+  emblem-rails
   haml-rails
   jquery-rails
   pg
