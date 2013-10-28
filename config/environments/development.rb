@@ -28,6 +28,4 @@ RcIva::Application.configure do
   config.assets.debug = true
 
   config.ember.variant = :development
-
-  # config.handlebars.precompile = true
 end

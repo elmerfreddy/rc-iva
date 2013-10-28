@@ -55,3 +55,7 @@ gem 'emblem-rails'
 gem 'active_model_serializers'
 
 gem 'anjlab-bootstrap-rails', '~> 3.0.0.3', :require => 'bootstrap-rails'
+
+gem 'rails_12factor', group: :production
+
+gem 'unicorn'
