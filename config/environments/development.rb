@@ -29,5 +29,5 @@ RcIva::Application.configure do
 
   config.ember.variant = :development
 
-  config.handlebars.precompile = false
+  # config.handlebars.precompile = true
 end
