@@ -1,8 +1,65 @@
-div
-  label Name:
-  = input type="text" value=name placeholder="Enter your name" action='showName'
+.container
+  .header
+    ul.nav.nav-pills.pull-right
+      li.active
+        linkTo 'people' | Home
+      /li
+      /  a About
+      /li
+      /  a Contact
+    %h3.text-muted RC-IVA
+  /.jumbotron
+  /  %h1 Jumbotron heading
+  /  %p.lead Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+  /  %p
+  /    %a.btn.btn-lg.btn-success Sign up today
+  /.row.marketing
 
-.text
-  h1 My name is #{name}!
+  h3 Calculadora
 
-= outlet
+  table.table.table-condensed.table-striped.table-hover
+    tbody
+      tr
+        td
+        td Ingreso Total:
+        td
+          = input type="text" value=salary placeholder="Ingreso total..." class="form-control"
+      tr
+        td
+        td Descuento a la Seguridad Social (12.71%):
+        td $ #{ afp }
+      tr
+        td A.
+        td Ingreso Neto o Líquido Pagable:
+        td $ #{ netSalary }
+      tr
+        td B.
+        td 2 salarios mínimos nacionales (1200 x 2):
+        td $ #{ salaryMinimun }
+      tr
+        td C.
+        td Diferencia (A - B):
+        td $ #{ differenceAB}
+      tr
+        td D.
+        td Impuesto Determinado (13% de C):
+        td $ #{ taxC }
+      tr
+        td E.
+        td 13% de 2 salarios mínimos:
+        td $ #{ taxB }
+      tr
+        td F.
+        td Impuesto a Pagar (D - E):
+        td $ #{ taxDE }
+    footer
+      tr
+        td G.
+        td Monto en facturas (F x 100 / 13):
+        td
+          strong $ #{ amountBilling }
+
+  = outlet
+
+  .footer
+    %p © yomerito 2013
