@@ -53,3 +53,5 @@ gem 'ember-source', '1.1.2'
 gem 'emblem-rails'
 
 gem 'active_model_serializers'
+
+gem 'anjlab-bootstrap-rails', '~> 3.0.0.3', :require => 'bootstrap-rails'
