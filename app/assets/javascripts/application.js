@@ -12,5 +12,23 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
-//= require_tree .
+//= require handlebars
+//= require ember
+//= require ember-data
+//= require_self
+//= require rc_iva
+
+// for more details see: http://emberjs.com/guides/application/
+RcIva = Ember.Application.create();
+//= require twitter/bootstrap/transition
+//= require twitter/bootstrap/alert
+//= require twitter/bootstrap/modal
+//= require twitter/bootstrap/dropdown
+//= require twitter/bootstrap/scrollspy
+//= require twitter/bootstrap/tab
+//= require twitter/bootstrap/tooltip
+//= require twitter/bootstrap/popover
+//= require twitter/bootstrap/button
+//= require twitter/bootstrap/collapse
+//= require twitter/bootstrap/carousel
+//= require twitter/bootstrap/affix
