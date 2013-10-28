@@ -1,6 +1,6 @@
 div
   label Name:
-  = input type="text" value=name placeholder="Enter your name" action=showName
+  = input type="text" value=name placeholder="Enter your name" action='showName'
 
 .text
   h1 My name is #{name}!
