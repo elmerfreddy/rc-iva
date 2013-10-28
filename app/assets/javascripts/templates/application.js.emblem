@@ -19,36 +19,36 @@
       tr
         td
         td Descuento a la Seguridad Social (12.71%):
-        td $ #{ afp }
+        td #{ money afp }
       tr
         td A.
         td Ingreso Neto o Líquido Pagable:
-        td $ #{ netSalary }
+        td #{ money netSalary }
       tr
         td B.
         td 2 salarios mínimos nacionales (1200 &times; 2):
-        td $ #{ salaryMinimun }
+        td #{ money salaryMinimun }
       tr
         td C.
         td Diferencia (A - B):
-        td $ #{ differenceAB }
+        td #{ money differenceAB }
       tr
         td D.
         td Impuesto Determinado (13% de C):
-        td $ #{ taxC }
+        td #{ money taxC }
       tr
         td E.
         td 13% de 2 salarios mínimos:
-        td $ #{ taxB }
+        td #{ money taxB }
       tr
         td F.
         td Impuesto a Pagar (D - E):
-        td $ #{ taxDE }
+        td #{ money taxDE }
     footer
       tr
         th G.
         th Monto en facturas (F &times; 100 / 13):
-        th $ #{ amountBilling }
+        th #{ money amountBilling }
 
   = outlet
 
