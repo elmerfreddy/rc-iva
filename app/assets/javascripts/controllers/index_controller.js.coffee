@@ -1,4 +1,4 @@
-RcIva.ApplicationController = Ember.ArrayController.extend
+RcIva.IndexController = Ember.ArrayController.extend
   afp: (->
     salary = @get('salary') || 0
     salary * 0.1271
