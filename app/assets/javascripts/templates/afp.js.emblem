@@ -10,7 +10,8 @@ table.table.table-striped.table-hover
     tr
       td B
       td Ingreso Cotizable
-      td.text-right $5,041.40
+      td.col-sm-3
+        = input type="text" value=salary placeholder="Ingreso total..." class="form-control text-right"
     tr
       td.text-muted.text-center colspan='3'
         | LLENAR DE MANERA OBLIGATORIA
@@ -44,7 +45,7 @@ table.table.table-striped.table-hover
       td.text-right #{ money solidarityContribution }
   footer
     tr
-      th colspan='2' Total a Pagar SIP (C + D + E + F)
+      th colspan='2' Total a Pagar SIP (C + D + E + F + G)
       th.text-right #{ money sipTotal }
     tr
       th colspan='2' Total a Pagar Fondo Solidario (H + I + J + K)
