@@ -1,5 +1,6 @@
 Ember.Handlebars.helper('money', (amount, options) ->
-  # rounded = (Math.round(amount * 100) / 100).toFixed(2)
-  rounded = Math.round(amount)
+  precision = 2
+  precision = Math.pow(10, precision)
+  rounded = (Math.round(amount * precision) / precision).toFixed(2)
   "$ #{ rounded }"
 )
