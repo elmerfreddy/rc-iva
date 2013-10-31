@@ -10,7 +10,7 @@ table.table.table-striped.table-hover
     tr
       td B
       td Ingreso Cotizable
-      td.col-sm-3
+      td.col-md-3.col-sm-3
         = input type="text" value=salary placeholder="Ingreso total..." class="form-control text-right"
     tr
       td.text-muted.text-center colspan='3'

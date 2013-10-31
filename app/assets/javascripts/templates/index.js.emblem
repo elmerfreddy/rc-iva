@@ -5,39 +5,39 @@ table.table.table-striped.table-hover
     tr
       th
       th Ingreso Total:
-      th
-        = input type="text" value=salary placeholder="Ingreso total..." class="form-control"
+      th.col-md-3.col-sm-3
+        = input type="text" value=salary placeholder="Ingreso total..." class="form-control text-right"
   tbody
     tr
       td
       td Descuento a la Seguridad Social (12.71%):
-      td.text-muted #{ money afp }
+      td.text-muted.text-right #{ money afp }
     tr
       td A.
       td Ingreso Neto o Líquido Pagable:
-      td.text-muted #{ money netSalary }
+      td.text-muted.text-right #{ money netSalary }
     tr
       td B.
       td 2 salarios mínimos nacionales (1200 &times; 2):
-      td.text-muted #{ money salaryMinimun }
+      td.text-muted.text-right #{ money salaryMinimun }
     tr
       td C.
       td Diferencia (A - B):
-      td.text-muted #{ money differenceAB }
+      td.text-muted.text-right #{ money differenceAB }
     tr
       td D.
       td Impuesto Determinado (13% de C):
-      td.text-muted #{ money taxC }
+      td.text-muted.text-right #{ money taxC }
     tr
       td E.
       td 13% de 2 salarios mínimos:
-      td.text-muted #{ money taxB }
+      td.text-muted.text-right #{ money taxB }
     tr
       td F.
       td Impuesto a Pagar (D - E):
-      td #{ money taxDE }
+      td.text-right #{ money taxDE }
   footer
     tr
       th G.
       th Monto en facturas (F &times; 100 / 13):
-      th #{ money amountBilling }
+      th.text-right #{ money amountBilling }
