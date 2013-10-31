@@ -1,1 +1,54 @@
-h3 AFP
+h3 Futuro de Bolivia AFP
+
+table.table.table-striped.table-hover
+  thead
+    tr
+      th A
+      th Suma del Total Mensual de Contratos de Consultoría
+      th Monto en Bs
+  tbody
+    tr
+      td B
+      td Ingreso Cotizable
+      td.text-right $5,041.40
+    tr
+      td.text-muted.text-center colspan='3'
+        | LLENAR DE MANERA OBLIGATORIA
+    tr
+      td C
+      td Cotización Mensual (B &times; 10%)
+      td.text-muted.text-right #{ money monthlyQuotation }
+    tr
+      td D
+      td Comisión (B &times; 0.5%)
+      td.text-muted.text-right #{ money commission }
+    tr
+      td E
+      td Cotización Adicional
+      td.text-muted.text-right #{ money additionalContribution }
+    tr
+      td F
+      td Prima Riesgo Común (B &times; 1.71%)
+      td.text-muted.text-right #{ money commonRiskPremium }
+    tr
+      td G
+      td Prima Riesgo Laboral (B &times; 1.71%)
+      td.text-muted.text-right #{ money occupationalRiskPremium }
+    tr
+      td.text-muted.text-center colspan='3'
+        | APORTE SOLIDARIO
+        |  LLENAR DE MANERA OBLIGATORIA
+    tr
+      td H
+      td Aporte Solidario del Asegurado (B &times; 0.5%)
+      td.text-right #{ money solidarityContribution }
+  footer
+    tr
+      th colspan='2' Total a Pagar SIP (C + D + E + F)
+      th.text-right #{ money sipTotal }
+    tr
+      th colspan='2' Total a Pagar Fondo Solidario (H + I + J + K)
+      th.text-right #{ money solidarityTotal }
+    tr
+      th colspan='2'
+      th.text-muted.text-right #{ money amountTotal }
