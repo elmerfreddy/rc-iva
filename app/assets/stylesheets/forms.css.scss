@@ -1,7 +1,8 @@
 #invoices {
   tr {
+    height: 35px;
     td {
-      padding: 0 0 0 4px;
+      padding: 0;
       vertical-align: middle;
       input[type=text] {
         background: none;
@@ -16,8 +17,10 @@
           background: none;
           border: none;
           display: none;
+          height: 100%;
           margin: 0;
           padding: 0;
+          width: 100%;
           -webkit-appearance: none;
         	/*-moz-appearance: none;*/
         	-ms-appearance: none;
