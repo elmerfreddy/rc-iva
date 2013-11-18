@@ -12,60 +12,28 @@ table#invoices.table.table-striped.table-hover
       th.text-center Código Control
       th
   tbody
-    tr
-      td.text-center 1
-      td.text-center 4931357015
-      td.text-center 4127
-      td.text-center 210400142150
-      td.text-center 01/09/2013
-      td.text-center 240
-      td.text-center 61-E2-ED-0A-95
-      td.destroy
-        button
-          span.glyphicon.glyphicon-remove
-    tr
-      td.text-center 2
-      td.text-center 4931357015
-      td.text-center 4127
-      td.text-center 210400142150
-      td.text-center 01/09/2013
-      td.text-center 240
-      td.text-center 61-E2-ED-0A-95
-      td.destroy
-        button
-          span.glyphicon.glyphicon-remove
-    tr
-      td.text-center 3
-      td.text-center 4931357015
-      td.text-center 4127
-      td.text-center 210400142150
-      td.text-center 01/09/2013
-      td.text-center 240
-      td.text-center 61-E2-ED-0A-95
-      td.destroy
-        button
-          span.glyphicon.glyphicon-remove
-    tr
-      td.text-center 4
-      td.text-center 4931357015
-      td.text-center 4127
-      td.text-center 210400142150
-      td.text-center 01/09/2013
-      td.text-center 240
-      td.text-center 61-E2-ED-0A-95
-      td.destroy
-        button
-          span.glyphicon.glyphicon-remove
+    each form in forms
+      tr
+        td.text-center 1
+        td.text-center= nit
+        td.text-center= invoice
+        td.text-center= authorization
+        td.text-center= invoiceDate
+        td.text-center= amount
+        td.text-center= code
+        td.destroy
+          button
+            span.glyphicon.glyphicon-remove
     tr
       td.text-center 5
       td
         = input type="text" value=nit placeholder="NIT" class="form-control text-center"
       td
-        = input type="text" value=nroInvoice placeholder="Nro Factura" class="form-control text-center"
+        = input type="text" value=invoice placeholder="Nro Factura" class="form-control text-center"
       td
-        = input type="text" value=nroAuthorization placeholder="Nro Autorización" class="form-control text-center"
+        = input type="text" value=authorization placeholder="Nro Autorización" class="form-control text-center"
       td
-        = input type="text" value=date placeholder="Fecha" class="form-control text-center"
+        = input type="text" value=invoiceDate placeholder="Fecha" class="form-control text-center"
       td
         = input type="text" value=amount placeholder="Importe" class="form-control text-center"
       td
