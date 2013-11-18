@@ -1,0 +1,52 @@
+h3 Formulario 110
+
+table#invoices.table.table-striped.table-hover
+  thead
+    tr
+      th.text-center #
+      th.text-center NIT
+      th.text-center Nro Factura
+      th.text-center Nro Autorización
+      th.text-center Fecha
+      th.text-center Importe
+      th.text-center Código Control
+      th
+  tbody
+    each
+      tr
+        td.text-center 1
+        td.text-center= nit
+        td.text-center= invoice
+        td.text-center= authorization
+        td.text-center= date
+        td.text-center= amount
+        td.text-center= code
+        td.destroy
+          button
+            span.glyphicon.glyphicon-remove
+    tr
+      td.text-center 5
+      td
+        = input type="text" value=nit placeholder="NIT" class="form-control text-center"
+      td
+        = input type="text" value=invoice placeholder="Nro Factura" class="form-control text-center"
+      td
+        = input type="text" value=authorization placeholder="Nro Autorización" class="form-control text-center"
+      td
+        = input type="text" value=date placeholder="Fecha" class="form-control text-center"
+      td
+        = input type="text" value=amount placeholder="Importe" class="form-control text-center"
+      td
+        = input type="text" value=code placeholder="Código Control" class="form-control text-center" action="createForm"
+      td.destroy
+        button
+          span.glyphicon.glyphicon-remove
+  footer
+    tr
+      th colspan='5'
+      th.text-center 1000
+      th colspan='2'
+    tr
+      th colspan='5'
+      th.text-center 130
+      th colspan='2'

@@ -2,3 +2,4 @@
 
 RcIva.Router.map ()->
   @route('afp')
+  @resource('forms')
