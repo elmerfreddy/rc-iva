@@ -12,13 +12,13 @@ table#invoices.table.table-striped.table-hover
       th.text-center Código Control
       th
   tbody
-    each form in forms
+    each
       tr
         td.text-center 1
         td.text-center= nit
         td.text-center= invoice
         td.text-center= authorization
-        td.text-center= invoiceDate
+        td.text-center= date
         td.text-center= amount
         td.text-center= code
         td.destroy
@@ -33,11 +33,11 @@ table#invoices.table.table-striped.table-hover
       td
         = input type="text" value=authorization placeholder="Nro Autorización" class="form-control text-center"
       td
-        = input type="text" value=invoiceDate placeholder="Fecha" class="form-control text-center"
+        = input type="text" value=date placeholder="Fecha" class="form-control text-center"
       td
         = input type="text" value=amount placeholder="Importe" class="form-control text-center"
       td
-        = input type="text" value=code placeholder="Código Control" class="form-control text-center"
+        = input type="text" value=code placeholder="Código Control" class="form-control text-center" action="createForm"
       td.destroy
         button
           span.glyphicon.glyphicon-remove
