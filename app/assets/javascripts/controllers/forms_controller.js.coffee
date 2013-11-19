@@ -1,4 +1,15 @@
 RcIva.FormsController = Ember.ArrayController.extend
+  totalAmount: (->
+    @get('model').reduce ((prevVal, item) ->
+      prevVal + parseInt(item.get('amount') || 0, 10)
+    ), 0
+  ).property('model.@each.amount')
+
+  percentageAmount: (->
+    total = @get('totalAmount') || 0
+    Math.floor(total * 0.13)
+  ).property('totalAmount')
+
   actions: {
     createForm: ->
       nit = @get('nit')
