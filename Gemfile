@@ -48,9 +48,9 @@ gem 'debugger', group: [:development, :test]
 
 gem 'haml-rails'
 
-gem 'ember-rails'
+gem 'ember-rails', '~> 0.14.0'
 gem 'ember-source', '1.1.2'
-gem 'emblem-rails'
+gem 'emblem-rails', '~> 0.2.0'
 
 gem 'active_model_serializers'
 
