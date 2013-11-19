@@ -17,15 +17,15 @@ table#invoices.table.table-striped.table-hover
         tr focus-out="acceptChanges"
           td.text-center **
           td
-            = edit-form value=nit placeholder="NIT" class="form-control text-center" action="acceptChanges" insert-newline="acceptChanges"
+            = input-number value=nit placeholder="NIT" class="form-control text-center" action="acceptChanges" insert-newline="acceptChanges"
           td
-            = input type="text" value=invoice placeholder="Nro Factura" class="form-control text-center" action="acceptChanges"
+            = input-number type="text" value=invoice placeholder="Nro Factura" class="form-control text-center" action="acceptChanges"
           td
-            = input type="text" value=authorization placeholder="Nro Autorización" class="form-control text-center" action="acceptChanges"
+            = input-number type="text" value=authorization placeholder="Nro Autorización" class="form-control text-center" action="acceptChanges"
           td
             = input type="text" value=date placeholder="Fecha" class="form-control text-center" action="acceptChanges"
           td
-            = input type="text" value=amount placeholder="Importe" class="form-control text-center" action="acceptChanges"
+            = input-number type="text" value=amount placeholder="Importe" class="form-control text-center" action="acceptChanges"
           td
             = input type="text" value=code placeholder="Código Control" class="form-control text-center" action="acceptChanges" focus-out="acceptChanges" insert-newline="acceptChanges"
           td.destroy
@@ -46,15 +46,15 @@ table#invoices.table.table-striped.table-hover
     tr
       td.text-center *
       td
-        = input type="text" value=nit placeholder="NIT" class="form-control text-center"
+        = input-number type="text" value=nit placeholder="NIT" class="form-control text-center"
       td
-        = input type="text" value=invoice placeholder="Nro Factura" class="form-control text-center"
+        = input-number type="text" value=invoice placeholder="Nro Factura" class="form-control text-center"
       td
-        = input type="text" value=authorization placeholder="Nro Autorización" class="form-control text-center"
+        = input-number type="text" value=authorization placeholder="Nro Autorización" class="form-control text-center"
       td
         = input type="text" value=date placeholder="Fecha" class="form-control text-center"
       td
-        = input type="text" value=amount placeholder="Importe" class="form-control text-center"
+        = input-number type="text" value=amount placeholder="Importe" class="form-control text-center"
       td
         = input type="text" value=code placeholder="Código Control" class="form-control text-center" action="createForm" focus-out="createForm" insert-newline="createForm"
       td
