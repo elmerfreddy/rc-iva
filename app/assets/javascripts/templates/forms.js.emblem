@@ -13,36 +13,23 @@ table#invoices.table.table-striped.table-hover
       th
   tbody
     each itemController="form"
-      if isEditing
-        tr focus-out="acceptChanges"
-          td.text-center **
-          td
-            = input-number value=nit placeholder="NIT" class="form-control text-center" action="acceptChanges" insert-newline="acceptChanges"
-          td
-            = input-number type="text" value=invoice placeholder="Nro Factura" class="form-control text-center" action="acceptChanges"
-          td
-            = input-number type="text" value=authorization placeholder="Nro Autorización" class="form-control text-center" action="acceptChanges"
-          td
-            = input type="text" value=date placeholder="Fecha" class="form-control text-center" action="acceptChanges"
-          td
-            = input-number type="text" value=amount placeholder="Importe" class="form-control text-center" action="acceptChanges"
-          td
-            = input type="text" value=code placeholder="Código Control" class="form-control text-center" action="acceptChanges" focus-out="acceptChanges" insert-newline="acceptChanges"
-          td.destroy
-            button click="removeForm"
-              span.glyphicon.glyphicon-remove
-      else
-        tr click='editForm'
-          td.text-center= id
-          td.text-center= nit
-          td.text-center= invoice
-          td.text-center= authorization
-          td.text-center= date
-          td.text-center= amount
-          td.text-center= code
-          td.destroy
-            button click="removeForm"
-              span.glyphicon.glyphicon-remove
+      tr
+        td.text-center= id
+        td
+          = input-number value=nit class="form-control text-center"
+        td
+          = input-number type="text" value=invoice class="form-control text-center"
+        td
+          = input-number type="text" value=authorization class="form-control text-center"
+        td
+          = input type="text" value=date class="form-control text-center"
+        td
+          = input-number type="text" value=amount class="form-control text-center"
+        td
+          = input type="text" value=code class="form-control text-center"
+        td.destroy
+          button click="removeForm"
+            span.glyphicon.glyphicon-remove
     tr
       td.text-center *
       td
@@ -67,3 +54,5 @@ table#invoices.table.table-striped.table-hover
       th colspan='5'
       th.text-center= percentageAmount
       th colspan='2'
+
+button{ action 'saveForm' } Guardar Formulario

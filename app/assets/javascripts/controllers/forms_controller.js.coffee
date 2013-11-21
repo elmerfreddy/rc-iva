@@ -10,7 +10,10 @@ RcIva.FormsController = Ember.ArrayController.extend
     Math.floor(total * 0.13)
   ).property('totalAmount')
 
-  actions: {
+  actions:
+    saveForm: ->
+      @get('store').commit()
+
     createForm: ->
       nit = @get('nit')
       invoice = @get('invoice')
@@ -28,13 +31,9 @@ RcIva.FormsController = Ember.ArrayController.extend
         amount: amount
         code: code
 
-
       @set('nit', '')
       @set('invoice', '')
       @set('authorization', '')
       @set('date', '')
       @set('amount', '')
       @set('code', '')
-
-      form.save()
-  }
