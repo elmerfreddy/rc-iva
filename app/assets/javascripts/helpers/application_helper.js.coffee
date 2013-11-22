@@ -6,3 +6,5 @@ Ember.Handlebars.helper('money', (amount, options) ->
 )
 
 Ember.Handlebars.helper('edit-form', RcIva.EditFormView)
+
+Ember.Handlebars.helper('input-number', RcIva.NumberFieldView)
