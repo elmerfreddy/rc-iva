@@ -27,12 +27,4 @@ ActiveRecord::Schema.define(version: 20131118023902) do
     t.datetime "updated_at"
   end
 
-  create_table "people", force: true do |t|
-    t.string   "name"
-    t.string   "last_name"
-    t.integer  "age"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
 end

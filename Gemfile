@@ -48,13 +48,12 @@ gem 'debugger', group: [:development, :test]
 
 gem 'haml-rails'
 
-gem 'ember-rails', '~> 0.14.0'
-gem 'ember-source', '1.2.0.1'
-gem 'emblem-rails', '~> 0.2.1'
+gem 'ember-rails'
+gem 'emblem-rails'
 
 gem 'active_model_serializers'
 
-gem 'anjlab-bootstrap-rails', '~> 3.0.0.3', :require => 'bootstrap-rails'
+gem 'anjlab-bootstrap-rails', '~> 3.0.3.0', :require => 'bootstrap-rails'
 
 gem 'rails_12factor', group: :production
 
