@@ -14,7 +14,7 @@ table#invoices.table.table-striped.table-hover
   tbody
     each itemController="form"
       tr
-        td.text-center= id
+        td.text-center= inc _view.contentIndex
         td
           = input-number value=nit class="form-control text-center"
         td
@@ -28,7 +28,7 @@ table#invoices.table.table-striped.table-hover
         td
           = input type="text" value=code class="form-control text-center"
         td.destroy
-          button click="removeForm"
+          button{ action "removeForm" }
             span.glyphicon.glyphicon-remove
     tr
       td.text-center *

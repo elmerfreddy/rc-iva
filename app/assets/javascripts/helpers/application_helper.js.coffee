@@ -8,3 +8,11 @@ Ember.Handlebars.helper('money', (amount, options) ->
 Ember.Handlebars.helper('edit-form', RcIva.EditFormView)
 
 Ember.Handlebars.helper('input-number', RcIva.NumberFieldView)
+
+Ember.Handlebars.helper('get-full-year', ->
+  new Date().getFullYear()
+)
+
+Ember.Handlebars.helper('inc', (index) ->
+  index + 1
+)
