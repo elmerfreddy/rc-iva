@@ -2,15 +2,15 @@
   .header
     ul.nav.nav-pills.pull-right
       li
-        linkTo 'index' | Home
+        link-to 'index' | Home
       li
-        linkTo 'afp' | AFP
+        link-to 'afp' | AFP
       li
-        linkTo 'forms' | Formulario 110
+        link-to 'forms' | Formulario 110
 
     %h3.text-muted RC-IVA
 
   = outlet
 
   .footer
-    %p © yomerito 2013
+    %p &copy; yomerito {{get-full-year}}
