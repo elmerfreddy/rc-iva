@@ -1,9 +1,9 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.0.3'
+gem 'rails', '4.0.4'
 
-ruby '2.0.0'
+ruby '2.1.1'
 
 # Use postgresql as the database for Active Record
 gem 'pg'
@@ -53,7 +53,7 @@ gem 'emblem-rails'
 
 gem 'active_model_serializers'
 
-gem 'anjlab-bootstrap-rails', '~> 3.0.3.0', :require => 'bootstrap-rails'
+gem 'bootstrap-sass', '~> 3.1.1'
 
 gem 'rails_12factor', group: :production
 
