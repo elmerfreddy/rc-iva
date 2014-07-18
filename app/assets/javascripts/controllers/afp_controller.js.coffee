@@ -37,3 +37,9 @@ RcIva.AfpController = Ember.ArrayController.extend
   amountTotal: (->
     @get('sipTotal') + @get('solidarityTotal')
   ).property('sipTotal', 'solidarityTotal')
+
+  # amount without AFP
+  amountToPay: (->
+    salary = @get('salary') || 0
+    salary - @get('amountTotal')
+  ).property('salary', 'amountTotal')

@@ -51,5 +51,8 @@ table.table.table-striped.table-hover
       th colspan='2' Total a Pagar Fondo Solidario (H + I + J + K)
       th.text-right #{ money solidarityTotal }
     tr
-      th colspan='2'
+      td colspan='2' class='text-muted' Monto total a depositar en el Banco
       th.text-muted.text-right #{ money amountTotal }
+    tr
+      td colspan='2' class='text-info' Liquido Pagable - Salario descontando el AFP
+      th.text-info.text-right #{ money amountToPay }
