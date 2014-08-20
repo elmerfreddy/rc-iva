@@ -1,6 +1,6 @@
 h3 Futuro de Bolivia AFP
 
-table.table.table-striped.table-hover
+table.table.table-striped.table-hover.table-condensed
   thead
     tr
       th A
@@ -43,6 +43,21 @@ table.table.table-striped.table-hover
       td H
       td Aporte Solidario del Asegurado (B &times; 0.5%)
       td.text-right #{ money solidarityContribution }
+    tr
+      td.text-muted.text-center colspan='3'
+        | LLENAR SÓLO SI LA SUMA DEL TOTAL MENSUAL DE CONTRATOS DE CONSULTORÍA ES MAYOR A Bs 13.000
+    tr
+      td I
+      td Aporte Nacional Solidario 1% [(A - 13.000) &times; 1%]
+      td.text-right #{ money thirteenThousand }
+    tr
+      td J
+      td Aporte Nacional Solidario 5% [(A - 25.000) &times; 5%]
+      td.text-right #{ money twentyFiveThousand }
+    tr
+      td K
+      td Aporte Nacional Solidario 10% [(A - 35.000) &times; 10%]
+      td.text-right #{ money thirtyFiveThousand }
   footer
     tr
       th colspan='2' Total a Pagar SIP (C + D + E + F + G)
